@@ -1,18 +1,18 @@
-# Настройка безопасного Linux-сервера
+Настройка безопасного Linux-сервера
 
-Проект по настройке Ubuntu-сервера в виртуальной машине VirtualBox.
+ Проект по настройке Ubuntu-сервера в виртуальной машине VirtualBox.
 
-## Сделано
+Сделано
 
- - установлен SSH
- - настроен firewall (UFW)
- - установлене fail2ban
+ установлен SSH
+ настроен firewall (UFW)
+ установлене fail2ban
 
-## Проверка
+Проверка
 
- - sudo ufw status
- - sudo ss -tuln
- - sudo fail2ban-client status
- - sudo systemctl is-active ssh
+ sudo ufw status
+ sudo ss -tuln
+ sudo fail2ban-client status-
+ sudo systemctl is-active ssh
 
 
