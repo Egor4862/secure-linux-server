@@ -1,23 +1,24 @@
-Настройка безопасного Linux-сервера
+# Настройка безопасного Linux-сервера
 
-Проект по настройке Ubuntu-сервера в виртуальной машине VirtualBox.
+Проект по настройке сервера в виртуальной машине VirtualBox.
 
-Сделано
+## Что сделано:
+ Установлен SSH
+ Настроен firewall
+ Установлен fail2ban
 
- установлен SSH
- 
- настроен firewall (UFW)
- 
- установлен fail2ban
+## Как проверить:
+```bash
+sudo ufw status
+sudo ss -tuln
+sudo fail2ban-client status
+sudo systemctl is-active ssh 
+```
+## Что еще можно улучшить
 
-Проверка
+1. Настройка SSH:
+   Перевести SSH на другой порт (например, `2222`).
+   Запретить прямой вход для суперпользователя (`PermitRootLogin no`).
 
- sudo ufw status
- 
- sudo ss -tuln
- 
- sudo fail2ban-client status-
- 
- sudo systemctl is-active ssh
-
-
+2. Настройка Fail2ban:
+   Ужесточить правила и уменьшить количество попыток входа.
