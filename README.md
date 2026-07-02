@@ -1,28 +1,28 @@
-# Настройка безопасного Linux-сервера
+# Настройка защищённого Linux-сервера
 
-Проект по настройке сервера в виртуальной машине VirtualBox.
+## Цель проекта
+Развернуть и защитить Linux-сервер (Ubuntu, VirtualBox) с базовыми 
+мерами по информационной безопасности: SSH-доступ, firewall, защита 
+от брутфорса.
 
-## Что сделано:
- Установлен SSH
- 
- Настроен firewall
- 
- Установлен fail2ban
+## Стек
+Ubuntu Server, OpenSSH, UFW, Fail2ban
 
-## Как проверить:
-```bash
-sudo ufw status
-sudo ss -tuln
-sudo fail2ban-client status
-sudo systemctl is-active ssh 
-```
-## Что еще можно улучшить
+## Что сделано
+- Установлен и настроен SSH-доступ
+- Настроен firewall (UFW)
+- Установлен и настроен fail2ban для защиты от подбора паролей
 
-1. Настройка SSH:
+## Скриншоты проверки
+![ufw status](screenshots/ufw_status.png)
+![ssh active](screenshots/ssh_active.png)
+![fail2ban status](screenshots/fail2ban_status.png)
+![ss tuln](screenshots/ss_tuln.png)
 
-   Перевести SSH на другой порт (например, `2222`).
-   
-   Запретить прямой вход для суперпользователя (`PermitRootLogin no`).
+## Как воспроизвести
+Полный список команд — в [commands.md](./commands.md)
 
-2. Настройка Fail2ban:
-   Ужесточить правила и уменьшить количество попыток входа.
+## Что планирую улучшить
+- [ ] Перевести SSH на нестандартный порт (2222)
+- [ ] Запретить прямой вход root (PermitRootLogin no)
+- [ ] Ужесточить правила fail2ban (уменьшить maxretry)
