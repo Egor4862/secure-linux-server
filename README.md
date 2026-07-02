@@ -1,9 +1,7 @@
 # Настройка защищённого Linux-сервера
 
 ## Цель проекта
-Развернуть и защитить Linux-сервер (Ubuntu, VirtualBox) с базовыми 
-мерами по информационной безопасности: SSH-доступ, firewall, защита 
-от брутфорса.
+Развернуть и защитить Linux-сервер (Ubuntu, VirtualBox) с базовыми мерами по информационной безопасности: SSH-доступ, firewall, защита от брутфорса.
 
 ## Технологии
 Ubuntu Server, OpenSSH, UFW, Fail2ban
@@ -20,7 +18,7 @@ Ubuntu Server, OpenSSH, UFW, Fail2ban
 ![ss tuln](screenshots/ss_tuln.png)
 
 ## Как воспроизвести
-Полный список команд — в [commands.md](./commands.md)
+Полный список команд — в [commands.md](https://github.com/Egor4862/linux_lab/blob/main/commands.md)
 
 ## Что можно улучшить
 - Перевести SSH на нестандартный порт (2222)
