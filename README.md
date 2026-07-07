@@ -29,4 +29,4 @@ Ubuntu Server, OpenSSH, UFW, Fail2ban
 
 Кроме UFW правила можно настроить через iptables, он гибче в настройке. В файле есть защита от сканирования портов, ограничение попыток подключения по SSH и запись заблокированных пакетов в лог.
 
-Правила: `iptables-rules.sh`
+Правила: [`iptables-rules.sh`](iptables-rules.sh)
